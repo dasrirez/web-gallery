@@ -1,0 +1,307 @@
+body {
+    /*
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    */
+    color: rgb(113, 118, 122);
+    font-family: "Helvetica Neue";
+    font-weight: 200;
+    background-color: rgb(247, 248, 250);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+div {
+    margin: 4px;
+}
+
+form {
+    width: 100%;
+}
+
+textarea, input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px 14px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#gallery-img {
+    width: 50%;
+    height: 50%;
+    border: 5px solid black;
+}
+
+
+.line {
+    width: 100%;
+    border: 1px solid;
+}
+
+.btn {
+    cursor: pointer;
+    width: 200px;
+    background-color: white;
+    border: none;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+    border: 1px solid #eeeff2;
+}
+
+.btn-mini {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    width: 21px;
+    height: 21px;
+    background-color: rgb(247, 248, 250);
+    border: none;
+}
+
+
+.btn-green {
+    color: rgb(76, 175, 30);
+    /* border: 2px solid rgb(76, 175, 30); */
+}
+
+.btn-green:hover {
+    color: white;
+    background-color: rgb(76, 175, 30);
+}
+
+.btn-red {
+    color: red;
+    /* border: 2px solid red; */
+}
+
+.btn-red:hover {
+    color: white;
+    background-color: red;
+}
+
+.btn-blue {
+    color: rgb(0,140,186);
+    /* border: 2px solid rgb(0,140,186); */
+}
+
+.btn-blue:hover {
+    color: white;
+    background-color: rgb(0,140,186);
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 38%;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid #eeeff2;
+}
+
+.section-column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-row-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-row-start {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-row-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-borderless {
+    border: none;
+}
+
+#gallery-section, #galleries-section, #api-generated {
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: none;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+}
+
+
+.column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: relative;
+    width:50%;
+    height:50%;
+    right: 0px;
+    z-index: 1;
+}
+
+.overlay-top {
+    margin-top: -64px;
+    top: 51px;
+}
+
+.overlay-bottom {
+    bottom: 51px;
+    margin-bottom: -45px;
+}
+
+.overlay-item {
+    font-size: 0.8rem;
+    width: 300px;
+    opacity: 0.4;
+    color: white;
+    width: 100%;
+    background-color: black;
+    transition-duration: 0.4s;
+}
+
+.overlay-item:hover {
+    opacity: 0.8;
+}
+
+.element-group {
+    margin: 8px;
+}
+
+.section-header {
+    width: 100%;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeff2;
+}
+
+.item-details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.item-author {
+    width: 100%;
+    font-weight: 999;
+}
+
+.item-content {
+    width: 100%;
+}
+
+.item-date {
+}
+
+.no-padding {
+    padding: 0px;
+    margin: 0px;
+}
+
+.items {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgb(247, 248, 250);
+}
+
+.section-gallery {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: rgb(247, 248, 250);
+}
+
+#section-img-form {
+    padding-top: 0px;
+}
+
+#error_box {
+    color: red;
+}
+
+#signout {
+    float: left;
+}
+
+#pagination {
+  margin: 10px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+}
+
+#pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#pagination a.active {
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
